@@ -1,0 +1,43 @@
+common: &default_settings
+  commands:
+    fmt:
+      status: true
+      args:
+      - -s
+      - -w
+    run:
+      status: true
+
+  watcher:
+    extensions:
+    - go
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor
+
+settings:
+  legacy:
+    force: true
+    interval: 100ms
+
+server:
+  status: false
+  open: false
+  port: 5002
+  host: localhost
+
+schema:
+- name: app
+  path: ./app
+  <<: *default_settings
+  watcher:
+    paths:
+    - /
+    - ../common
+- name: wiki
+  path: ./wiki
+  <<: *default_settings
+  watcher:
+    paths:
+    - /

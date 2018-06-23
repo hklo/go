@@ -7,7 +7,7 @@ import (
 )
 
 func handle(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "You visited 11 %s in `%s`!", r.URL.Path, common.AppName)
+	fmt.Fprintf(w, "You visited %s in `%s`!", r.URL.Path, common.AppName)
 }
 
 func main() {
