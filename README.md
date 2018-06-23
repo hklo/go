@@ -1,2 +1,24 @@
 # go
-https://golang.org/doc/articles/wiki/
+
+## Getting Started
+This is a development setup for golang
+
+### What you’ll need
+* Docker
+
+### Folder structure
+```
+go/
+├── docker/ (Docker setup with golang environment)
+│   ├── root/
+│   │   ├── entrypoint.sh
+│   ├── Dockerfile
+├── src (Golang projects)
+├── .env
+├── docker-compose.yml
+```
+
+### Run Command
+From **project** root execute:
+
+    $ docker-compose up
