@@ -1,8 +1,7 @@
 # go
-
-## Getting Started
 This is a development setup for golang
 
+## Getting Started
 ### What you’ll need
 * Docker
 
