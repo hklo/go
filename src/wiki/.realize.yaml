@@ -6,6 +6,11 @@ schema:
 - name: wiki
   path: .
   commands:
+    fmt:
+      status: true
+      args:
+      - -s
+      - -w
     run:
       status: true
   watcher:

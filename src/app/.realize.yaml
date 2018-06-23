@@ -11,6 +11,11 @@ schema:
 - name: app
   path: .
   commands:
+    fmt:
+      status: true
+      args:
+      - -s
+      - -w
     run:
       status: true
   watcher:

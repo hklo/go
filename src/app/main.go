@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"github.com/seekasia/common"
+	"net/http"
 )
 
 func handle(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "You visited 1 %s in `%s`!", r.URL.Path, common.AppName)
+	fmt.Fprintf(w, "You visited 11 %s in `%s`!", r.URL.Path, common.AppName)
 }
 
 func main() {
