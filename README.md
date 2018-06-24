@@ -14,11 +14,11 @@ This is a development setup for golang. Idea got from [article](https://mikemadi
 ```
 go/
 ├── docker/ (Docker setup with golang environment)
-│   ├── root/
-│   │   ├── entrypoint.sh
+│   ├── entrypoint.sh
 │   ├── Dockerfile
 ├── src (Golang projects)
 ├── .env
+├── .gitignore
 ├── docker-compose.yml
 ```
 
@@ -26,4 +26,3 @@ go/
 From **project** root execute:
 
     $ docker-compose up
-
