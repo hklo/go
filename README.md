@@ -2,7 +2,10 @@
 This is a development setup for golang. Idea got from [article](https://mikemadisonweb.github.io/2018/03/06/go-autoreload)
 
 ## Getting Started
-Project setup using [realize](https://github.com/oxequa/realize) with live reload feature.
+
+### Features
+* Live reload [realize](https://github.com/oxequa/realize)
+* Dependency management [dep](https://golang.github.io/dep)
 
 ### What you’ll need
 * Docker
@@ -23,3 +26,4 @@ go/
 From **project** root execute:
 
     $ docker-compose up
+
