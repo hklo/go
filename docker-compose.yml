@@ -3,7 +3,7 @@ services:
   app:
     container_name: go-dev
     build:
-      context: .
+      context: ./docker
       args:
         projectDir: ${GO_PROJECT_DIR}
     volumes:
