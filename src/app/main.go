@@ -16,7 +16,7 @@ func bookHandle(w http.ResponseWriter, r *http.Request) {
 }
 
 func indexHandle(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Index page")
+	fmt.Fprintf(w, "Hello World")
 }
 
 func startServer(port string) {
